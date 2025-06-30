@@ -13,6 +13,7 @@ public class Main {
         service.setUser(2, 10000);
 
         service.bookRoom(1, 2, sdf.parse("30/06/2026"), sdf.parse("07/07/2026"));
+        // Comment out the line below to prevent the exception from being thrown 
         service.bookRoom(1, 2, sdf.parse("07/07/2026"), sdf.parse("30/06/2026"));
         service.bookRoom(1, 1, sdf.parse("07/07/2026"), sdf.parse("08/07/2026"));
         service.bookRoom(2, 1, sdf.parse("07/07/2026"), sdf.parse("09/07/2026"));
